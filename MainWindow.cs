@@ -201,9 +201,10 @@ namespace HarmonicOscillation
 
             // Darstellung einstellen
             way.ChartType = speed.ChartType = acceleration.ChartType = SeriesChartType.Spline;
+            
 
             // Graph zeichnen
-            for (double i = -4; i <= 4; i += 0.01)
+            for (double i = -3.99; i <= 4; i += 0.01)
             {
                 way.Points.AddXY(i, cal.calculateWay(i));
                 speed.Points.AddXY(i, cal.calculateSpeed(i));
